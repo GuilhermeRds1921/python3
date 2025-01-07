@@ -1,14 +1,17 @@
-#        Jogo da Adivinhação
-# Escreva um programa que faça o computador "pensar" em um 
-# número inteiro entre 0 e 5 e peça para o usuário tentar descobrir
-# qual foi o número escolhido pelo computador.
-# O programa deverá escrever na tela se o usuário venceu ou perdeu.
+#           Guessing Game
+# Write a program where the computer "thinks" of an integer between 0 and 5
+# and asks the user to guess which number was chosen.
+# The program should display whether the user won or lost.
 
 from random import randint
-b = randint(0,5)
-a = int(input("Escreva um Número de 0 a 5: "))
-if a==b:
-    print("Você acertou ")
+
+computer_choice = randint(0, 5)
+
+user_guess = int(input("Enter a number between 0 and 5: "))
+
+if user_guess == computer_choice:
+    print("You guessed correctly!")
 else:
-    print("Você errou ")
-print("O número era {}".format(b))
+    print("You guessed wrong.")
+
+print(f"The number was {computer_choice}.")

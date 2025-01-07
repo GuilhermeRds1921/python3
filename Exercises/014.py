@@ -1,6 +1,7 @@
-# Escreva um programa que converta uma temperatura
-# digitando em ºC e converta para ºF.
+# Write a program that converts a temperature
+# entered in ºC to ºF.
 
-temp = float(input("Informe a Temperatura em Cº: "))
+temp = float(input("Enter the temperature in ºC: "))
 f = float((temp * 9 / 5) + 32)
-print("A temperatura {}Cº é o que vale {}ºF".format(temp, f))
+
+print("The temperature {}ºC is equal to {}ºF".format(temp, f))

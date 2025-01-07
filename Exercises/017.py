@@ -1,10 +1,10 @@
-# Faça um programa que leia o comprimento do
-# cateto oposto e do cateto adjacente de um
-# Triângulo retângulo, calcue e mostre o
-# comprimento da hipotenusa.
+# Create a program that reads the lengths of the opposite and adjacent
+# sides of a right triangle, calculates, and displays the length of the hypotenuse.
 
 from math import sqrt, pow
-ca = float(input("Informe o Cateto Adjacente: "))
-co = float(input("Informe o Cateto Oposto: "))
-hip = float(pow(ca,2) + pow(co,2))
-print("A Hipotenusa é {:.2f}".format(sqrt(hip)))
+
+adjacent = float(input("Enter the Adjacent Side: "))
+opposite = float(input("Enter the Opposite Side: "))
+hypotenuse = float(pow(adjacent, 2) + pow(opposite, 2))
+
+print("The hypotenuse is {:.2f}".format(sqrt(hypotenuse)))

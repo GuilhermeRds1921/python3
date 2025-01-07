@@ -1,7 +1,8 @@
-# Faça um programa que leia um número Inteiro qualquer e mostre
-# na tabela a sua tabuada.
+# Create a program that reads any integer and displays
+# its multiplication table.
 
-num = int(input("Digite um Número: "))
+num = int(input("Enter a number: "))
+
 print("{} * 1 = {}".format(num, num * 1))
 print("{} * 2 = {}".format(num, num * 2))
 print("{} * 3 = {}".format(num, num * 3))

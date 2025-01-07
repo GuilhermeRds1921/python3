@@ -1,7 +1,9 @@
-# Crie um programa que leia um número inteiro 
-# e diga se ele é Par ou Impar.
-num = int(input("Digite um Numero: "))
-if num % 2 == 0:
-    print("Par ")
+# Create a program that reads an integer and
+# tells whether it is even or odd.
+
+number = int(input("Enter a number: "))
+
+if number % 2 == 0:
+    print("Even")
 else:
-    print("Impar ")
+    print("Odd")

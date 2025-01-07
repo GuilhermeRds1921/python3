@@ -1,5 +1,6 @@
-# Crie um programa que leia quanto dinheiro uma pessoa tem na
-# carteira e mostre quantos Dólares ela pode comprar.
+# Create a program that reads how much money a person has in their wallet
+# and displays how many dollars they can buy.
 
-num = float(input("Digite quantos Reais você tem: "))
-print("Você poderia comprar ${:.2} Dollar".format(num / 5))
+num = float(input("Enter how much money you have in Reais: "))
+
+print("You could buy ${:.2f} dollars".format(num / 5))

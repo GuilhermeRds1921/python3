@@ -1,6 +1,7 @@
-# Crie um programa que leia o nome de uma pessoa
-# e diga se ela tem "Silva" no nome.
+# Create a program that reads a person's name
+# and checks if they have "Silva" in their name.
 
-nome = input('Digite seu Nome Completo: ')
-nome = nome.upper().split()
-print('SILVA' in nome)
+name = input('Enter your full name: ')
+name = name.upper().split()
+
+print('SILVA' in name)

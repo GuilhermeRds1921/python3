@@ -1,6 +1,7 @@
-# Crie um programa que leia um número Real qualquer pelo teclado
-# mostre na tela sua porção Inteira.
+# Create a program that reads any real number from the keyboard
+# and displays its integer portion.
 
-num = float(input("Digite um Número: "))
+num = float(input("Enter a number: "))
 conv = int(num)
-print("O número {} tem parte inteira de {}".format(num, conv))
+
+print("The number {} has an integer part of {}".format(num, conv))

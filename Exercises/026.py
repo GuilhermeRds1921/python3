@@ -1,10 +1,13 @@
-# Faça um programa que leia uma frase pelo teclado e mostre: 
-# Quantas vezes aparece a letra "A". 
-# Em que posição ela aparece a primira vez. 
-# Em que posiçao ela aparece a última vez.
+# Create a program that reads a sentence from the keyboard and displays:
+# How many times the letter "A" appears.
+# The position where it appears for the first time.
+# The position where it appears for the last time.
 
-frase = str(input("Digite uma Frase qualquer: "))
-frase = frase.lower()
-print('Letra A:',frase.count('a'))
-print('Primeiro A pos:',frase.find('a'))
-print('Último A pos:',frase.rfind('a'))
+sentence = input("Enter any sentence: ")
+sentence = sentence.lower()
+
+print('Letter A appears:', sentence.count('a'))
+
+print('First "A" position:', sentence.find('a'))
+
+print('Last "A" position:', sentence.rfind('a'))

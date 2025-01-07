@@ -1,15 +1,19 @@
-# Crie um programa que leia o nome completo de uma pessoa e mostre: 
-# O nome com todas as letras maiúsculas e minúsculas. 
-# Quantas letras ao todo (sem considerar espaços). 
-# Quantas letras tem o primeiro nome.
+# Create a program that reads a person's full name and displays:
+# The name in all uppercase and lowercase letters.
+# The total number of letters (excluding spaces).
+# The number of letters in the first name.
 
+name = input("Enter your full name: ")
 
-nome = input("Digite seu Nome Completo: ")
-print(nome.upper())
-print(nome.lower())
-esp = int(nome.count(' '))
-letr = int(len(nome))
-num = int(letr - esp)
-print('Seu nome completo tem {} letras'.format(num))
-nome2 = nome.split()
-print('Seu primeiro nome tem {} letras'.format(len(nome2[0])))
+print(name.upper())
+print(name.lower())
+
+# Count the number of letters (excluding spaces)
+spaces = int(name.count(' '))
+letters = int(len(name))
+total_letters = int(letters - spaces)
+print('Your full name has {} letters'.format(total_letters))
+
+# Count the number of letters in the first name
+name_parts = name.split()
+print('Your first name has {} letters'.format(len(name_parts[0])))

@@ -1,6 +1,7 @@
-# Fça um algoritmo que leia o preço de um produto e mostre seu
-# novo preço, com 5% de desconto.
+# Create an algorithm that reads the price of a product and shows its
+# new price with a 5% discount.
 
-valor = float(input("Digite o Preço de algo: "))
-desc = float(valor - (valor * 0.05))
-print("O valor com 5% de desconto é: {:.2f}".format(desc))
+price = float(input("Enter the price of something: "))
+discounted_price = float(price - (price * 0.05))
+
+print("The price with a 5% discount is: {:.2f}".format(discounted_price))

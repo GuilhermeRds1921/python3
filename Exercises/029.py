@@ -1,11 +1,12 @@
-# Escreva um programa que leia a velocidade de um carro. 
-# Se ele ultrapassar 80Km/h, mostre uma mensagem dizendo que ele foi muldato. 
-# A multa vai custar R$7,00 para cada Km acima do limite.
+# Write a program that reads the speed of a car.
+# If it exceeds 80Km/h, display a message saying the car was fined.
+# The fine will cost R$7.00 for each Km above the limit.
 
-vel = float(input("Digite a velocidade do carro: "))
-if vel <= 80:
-    print("Você está dentro do limite ")
+speed = float(input("Enter the car's speed: "))
+
+if speed <= 80:
+    print("You are within the speed limit.")
 else:
-    print("Você está acima do limite ")
-    vel = vel - 80
-    print("Terá que pagar R${:.2f} de multa ".format(vel * 7))
+    fine = (speed - 80) * 7
+    print("You are over the speed limit!")
+    print(f"You will have to pay a fine of R${fine:.2f}.")

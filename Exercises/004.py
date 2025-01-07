@@ -1,11 +1,12 @@
-# Faça um programa que leia algo pelo teclado e mostre na tela 
-# seu tipo primitivo e todas as infomações possíveis sobre ele.
+# Create a program that reads something from the keyboard and displays on the screen
+# its primitive type and all possible information about it.
 
-valor = input('Variável: ')
-print('O tipo da variável e: ',type(valor))
-print('E feito de espacos: ', valor.isspace())
-print('E númerico: ', valor.isnumeric())
-print('E alfabetico: ', valor.isalpha())
-print('E tudo maiúsculo: ', valor.isupper())
-print('E tudo minúsculo: ', valor.islower())
-print('E capitalizada: ', valor.istitle())
+value = input('Variable: ')
+
+print('The type of the variable is: ', type(value))
+print('Is it made of spaces: ', value.isspace())
+print('Is it numeric: ', value.isnumeric())
+print('Is it alphabetic: ', value.isalpha())
+print('Is it all uppercase: ', value.isupper())
+print('Is it all lowercase: ', value.islower())
+print('Is it capitalized: ', value.istitle())

@@ -1,14 +1,11 @@
-# Faça um programa que leia um ano qualquer 
-# e mostre se ele é Bissexto.
+# Write a program that reads any year and shows if it is a Leap Year.
 
-ano = int(input("Digite o Ano: "))
-if ano % 4 == 0:
-    ano = ano
-    if ano % 100 != 0:
-        print("{} é Bissexto ".format(ano))
-    elif ano % 400 == 0:
-        print("{} é Bissexto ".format(ano))
+year = int(input("Enter the year: "))
+
+if year % 4 == 0:
+    if year % 100 != 0 or year % 400 == 0:
+        print(f"{year} is a leap year.")
     else:
-        print("Não é Bissexto ")
+        print(f"{year} is not a leap year.")
 else:
-    print("Não é Bissexto ")
+    print(f"{year} is not a leap year.")

@@ -1,13 +1,17 @@
-# O mesmo professor do desafio anterior quer sortear a ordem de 
-# apresentação de trabalhos dos alunos. Faça um programa que leia 
-# o nome dos quatro alunos e mostre a ordem sorteada.
+# The same teacher from the previous challenge wants to randomly choose the order of
+# student presentations. Create a program that reads the names of four students and displays
+# the randomized order.
 
 import random
-n1 = input("Digite Primiero Nome: ")
-n2 = input("Digite Segundo Nome: ")
-n3 = input("Digite Terceiro Nome: ")
-n4 = input("Digite Quarto Nome: ")
-lista = [n1,n2,n3,n4]
-random.shuffle(lista)
-print("A ordem de apresentaçao é: ")
-print(lista)
+
+name1 = input("Enter First Name: ")
+name2 = input("Enter Second Name: ")
+name3 = input("Enter Third Name: ")
+name4 = input("Enter Fourth Name: ")
+
+students = [name1, name2, name3, name4]
+random.shuffle(students)
+
+print("The order of presentation is: ")
+print(students)
+

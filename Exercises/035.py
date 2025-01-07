@@ -1,23 +1,20 @@
-# Desenvolva um programa que leia o comprimento de
-# três retas e diga ao usuário se elas podem 
-# ou não formar um trângulo.
+# Develop a program that reads the length of three sides
+# and tells the user if they can form a triangle.
 
-a = float(input("Digite a Primeira Reta: "))
-b = float(input("Digite a Segunda Reta: "))
-c = float(input("Digite a Terceira Reta: "))
+a = float(input("Enter the first side: "))
+b = float(input("Enter the second side: "))
+c = float(input("Enter the third side: "))
+
+# Sort the sides to simplify the logic
 if a < b:
-    ax = a
-    a = c
-    c = ax
+    a, b = b, a
+if a < c:
+    a, c = c, a
 if b < c:
-    ax = b
-    b = c
-    c = ax
-if a < b:
-    ax = a
-    a = c
-    c = ax
+    b, c = c, b
+
+# Check if the sides can form a triangle
 if a < b + c:
-    print("Pode formar um Triângulo ")
+    print("The sides can form a triangle.")
 else:
-    print("Não pode formar um Triângulo ")
+    print("The sides cannot form a triangle.")

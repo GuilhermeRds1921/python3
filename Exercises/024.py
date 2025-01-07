@@ -1,6 +1,7 @@
-# Crie um programa que leia o nome de uma cidade
-# e diga se ela começa ou não com o nome "Santo".
+# Create a program that reads the name of a city
+# and checks if it starts with the name "Santo".
 
-nome = input("Digite o Nome da sua Cidade: ")
-nome = nome.split()
-print('Santo' in nome[0])
+city_name = input("Enter the name of your city: ")
+city_name = city_name.split()
+
+print('Santo' in city_name[0])

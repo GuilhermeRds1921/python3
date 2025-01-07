@@ -1,8 +1,9 @@
-# Escreva um programa que pergunte a quantidade de Km
-# percorridos por um carro alugado e a quantidade de dias pelos
-# quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro
-# custa R$60 por dia e R$0.15 por Km rodado.
+# Write a program that asks for the number of km
+# driven by a rented car and the number of days it was rented.
+# Calculate the price to pay, knowing that the car costs R$60 per day
+# and R$0.15 per km driven.
 
-km = float(input("Quantos km percorreu?: "))
-dia = int(input("Quantos dias ele foi alugado?: "))
-print("O valor a ser pago é: R${:.2f}".format(km * 0.15 + dia * 60))
+km = float(input("How many km did you drive?: "))
+days = int(input("How many days was it rented?: "))
+
+print("The amount to be paid is: R${:.2f}".format(km * 0.15 + days * 60))

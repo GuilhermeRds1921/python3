@@ -1,8 +1,12 @@
-# Faça um programa que leia o nome completo de uma pessoa, 
-# mostrando em seguida o primeiro e o último nome separadamente.
+# Create a program that reads a person's full name
+# and displays the first and last names separately.
 
-nome = input('Digite seu Nome Completo: ')
-nome = nome.split()
-ult = int(len(nome))
-print('Primeiro:',nome[0])
-print('Último:',nome[int(ult - 1)])
+name = input('Enter your full name: ')
+name = name.split()
+
+# Get the first and last name
+first_name = name[0]
+last_name = name[-1]
+
+print('First name:', first_name)
+print('Last name:', last_name)

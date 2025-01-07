@@ -1,5 +1,5 @@
-# Crie um programa que leia dois números e mostre a soma entre eles.
+# Create a program that reads two numbers and shows the sum between them.
 
-num1 = float(input('Digite um valor: '))
-num2 = float(input('Digite outro valor: '))
-print('O valor da Soma entre eles é: {}'.format(num1 + num2))
+num1 = float(input('Enter a value: '))
+num2 = float(input('Enter another value: '))
+print('The sum of them is: {}'.format(num1 + num2))

@@ -1,6 +1,7 @@
-# Faça um algoritmo que leia o salário de um funcionãrio e mostre seu
-# novo salário, com 15% de aumento.
+# Create an algorithm that reads an employee's salary and shows their
+# new salary with a 15% raise.
 
-sal = float(input("Digite o Salário: "))
-alm = float(sal + (sal * 0.15))
-print("O Salário com um aumento de 15% é: {:.2f}".format(alm))
+salary = float(input("Enter the salary: "))
+new_salary = float(salary + (salary * 0.15))
+
+print("The salary with a 15% raise is: {:.2f}".format(new_salary))

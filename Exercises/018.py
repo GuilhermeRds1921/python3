@@ -1,13 +1,13 @@
-# Faça um programa que leia um ângulo qualquer e
-# morte na tela o valor do seno, cosseno e
-# tangente desse ângulo.
+# Create a program that reads any angle and
+# displays the sine, cosine, and tangent of that angle.
 
 import math
-angl = float(input("Informe o Ângulo: "))
-sen = math.sin(math.radians(angl))
-cos = math.cos(math.radians(angl))
-tan = math.tan(math.radians(angl))
-print("O Seno desse ângulo é {:.2f}".format(sen))
-print("O Cosseno desse ângulo é {:.2f}".format(cos))
-print("A Tangente desse ângulo é {:.2f}".format(tan))
 
+angle = float(input("Enter the Angle: "))
+sine = math.sin(math.radians(angle))
+cosine = math.cos(math.radians(angle))
+tangent = math.tan(math.radians(angle))
+
+print("The Sine of this angle is {:.2f}".format(sine))
+print("The Cosine of this angle is {:.2f}".format(cosine))
+print("The Tangent of this angle is {:.2f}".format(tangent))
